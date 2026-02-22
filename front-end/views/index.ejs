@@ -11,7 +11,7 @@
     <%- include("partials/header.ejs") %>
     <div class="slideshow-container">
         <div class="slide">
-            <img id = "slide-img" src="../images/Image1.jpg" alt="Me and a Funny Puppy" width="200" height="250">
+            <img id = "slide-img" src="/images/meAndMikka.jpg" alt="Me and a Funny Puppy" width="200" height="250">
         </div>
     </div>
 
@@ -20,8 +20,7 @@
             <section id="about" aria-labelledby="about-heading">
                 <h2 id = "about-heading">Bio</h2>
                 <div class="about-content">
-                    <p style="text-indent: 1rem;">My name is <strong>Owen Espitia</strong>. I grew up in California but moved to Utah a long time ago. I am very passionate about my hobbies and I spend most of my time away from my house pursuing them. I am a firm believer in karma. I love all forms of art and Nujabes is my favorite Artist!</p>
-                    <p style="text-indent: 1rem;">I came to Neumont because I believe they do things differently than a normal college. I have really enjoyed my time here with the new friends I've made. Furthermore, I feel that living in SLC has shown me so many different cultures I never would have been apart of otherwise!</p>
+                    <p style="text-indent: 1rem;">My name is <strong>Owen Espitia</strong>. I grew up in California but moved to Utah a long time ago. I am very passionate about computer science and one day hope to make a career out of Data Analytics and Machine Learning Models</p>
                     
                 </div>
 
@@ -29,8 +28,24 @@
         </div>
 
     </main>
-    <footer>
-        <p>&copy;2026 Owen Espitia. All rights reserved.</p>
-    </footer>
+    <%- include("partials/footer.ejs") %>
+
+<script>
+        const images = [
+            "/images/meAndMikka.jpg",
+            "/images/meAndFellas.jpg",
+            "/images/meAndBurgess.jpg",
+            "/images/meAndUSG.jpg"
+        ];
+
+        let index = 0;
+        const imgAtHand = document.getElementById("slide-img");
+
+        setInterval(() => {
+        index = (index + 1) % images.length;
+        imgAtHand.src = images[index];
+        }, 3000);
+    </script>
+
 </body>
 </html>

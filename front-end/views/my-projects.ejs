@@ -14,7 +14,7 @@
     <main id = "main-content" role="main">
         <div class = "container">
             <section id="about" aria-labelledby="about-heading">
-                <h2 id = "about-heading">Past Projects</h2>
+                <h2 id = "about-heading">Past and Current Projects</h2>
                 <div class="about-content">
                     <div class="about-text">
                         <p>This page is for learning about my past projects to get a feel of what I'm comfortable with.</p>
@@ -22,7 +22,7 @@
                     </div>
 
                     <aside class="interests" aria-labelledby="interests-heading">
-                        <h3 id = "interests-heading" style="font-style: italic;">"Every Champion was once a contender who refused to give up" -Rocky BalboaS</h3>
+                        <h3 id = "interests-heading" style="font-style: italic;">"Every Champion was once a contender who refused to give up" -Rocky Balboa</h3>
                         <ul>
                             <li>
                                 <details>
@@ -48,8 +48,20 @@
                                     <p>Built for Project Managment. This was a C# program that had a slot machine that took files from your computer as payment. If you lost it would encrpyt the files and store them in local memory until you 'won' them back. First real team project, it was awesome!</p>
                                 </details>
                             </li>
+                            <li>
+                                <details>
+                                    <summary>Wikipedia in MongoDB</summary>
+                                    <p>I built this project for Persistance Projects. The goal was tackling working with huge amounts of data specifically desgined to be more than your computer could handle. Ultimately, me and my team were able to write all of Wikipedia's pages into a Mongo database and query it.</p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Trigonometry Calculator</summary>
+                                    <p>This was more of a passion project of mine, the gaol was to make a comprehensive and visual calculator for trigonometry. The calculator offers graphs of the unit circle and standard trig functions. This project is in the making.</p>
+                                </details>
+                            </li>
                         </ul>
-                            
+                        <p style="font-style: italic; font-weight:200; font-size: smaller;">*This is just a small list of my past and current projects</p>
                     </aside>
                 </div>
 
@@ -57,10 +69,6 @@
         </div>
 
     </main>
-    <footer>
-        <p>&copy;2025 Owen Espitia. All rights reserved.</p>
-    </footer>
-    <script src="../js/finalProject.js"></script>
-
+    <%- include("partials/footer.ejs") %>
 </body>
 </html>
