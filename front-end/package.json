@@ -1,0 +1,17 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "front-end.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node front-end.js"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
